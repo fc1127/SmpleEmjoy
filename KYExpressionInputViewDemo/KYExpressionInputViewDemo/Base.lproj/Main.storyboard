@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EeY-p0-BfW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="a6t-s7-bCf">
+            <objects>
+                <viewController id="EeY-p0-BfW" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZF-65-QiS"/>
+                        <viewControllerLayoutGuide type="bottom" id="TDb-ur-TYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9y8-8Z-ReJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click to input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nP9-is-LQP">
+                                <rect key="frame" x="175" y="285" width="251" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97598463102588429" green="0.76827579230322551" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="dLF-JS-xlK"/>
+                                    <constraint firstAttribute="height" constant="30" id="drC-R4-Fd3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nP9-is-LQP" firstAttribute="centerY" secondItem="9y8-8Z-ReJ" secondAttribute="centerY" id="a4r-eS-Hcs"/>
+                            <constraint firstItem="nP9-is-LQP" firstAttribute="centerX" secondItem="9y8-8Z-ReJ" secondAttribute="centerX" id="aQH-fK-vuW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="nP9-is-LQP" id="Oxo-L5-KAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quw-y5-6yW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="315"/>
+        </scene>
+    </scenes>
+</document>
